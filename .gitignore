@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Python venv
+venv/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# Compiled
+*.pyc
+
+sftp.json
