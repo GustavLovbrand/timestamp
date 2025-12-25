@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# API routes: /api/v1/controller/action
+RewriteRule ^api/v([0-9]+)/([^/]+)/([^/]+)/?$ index.php?api=1&version=$1&controller=$2&action=$3 [L,QSA]
+
+# Vanliga MVC routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
